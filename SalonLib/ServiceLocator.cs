@@ -8,7 +8,6 @@ public class ServiceLocator
         store = new Dictionary<string, Func<string>>();
         store.Add("Читать стихи", () => "В читальном зале");
         store.Add("Петь романсы", () => "У рояля");
-        store.Add("Играть в карты", () => "За карточным столом");
     }
 
     public static string GetService(string key)
